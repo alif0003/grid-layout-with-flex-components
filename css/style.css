@@ -1,17 +1,24 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
+    box-sizing: border-box;
   }
   
 .emojis {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 800px;
 }
 
   .emoji {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
+    justify-content: space-between;
+
   }
   
   .emoji h2 {
@@ -29,4 +36,5 @@ body {
   
   .icon {
     font-size: 4rem;
+    align-self: center;
   }
